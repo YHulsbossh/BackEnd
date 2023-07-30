@@ -1,23 +1,5 @@
 const fs = require("fs").promises;
-const express = require('express')
-const app = express()
-const port = 8080
 
-app.get('/products', async (req, res) => {
-  const products = await PM.getProducts(); 
-})
-
-app.get('/products/:pid', async (req, res) => {
-  const productId = parseInt(req.params.pid);
-  const product = await PM.getProductById(productId); 
-  res.send(product);
-})
-
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
 
 class ProductManager {
   constructor() {
@@ -34,10 +16,13 @@ class ProductManager {
     }
   }
 
-  async getProducts() {
+  async getProducts(limit) {
     try {
       await this.loadProducts();
-      return this.products;
+      if (limit === 0) {
+        return [];
+      }
+      return this.products.slice(0, limit); 
     } catch (error) {
       console.error("Error al cargar los productos desde el archivo:", error);
       throw error; 
@@ -145,4 +130,4 @@ const PM = new ProductManager();
   console.log(products);
 })();
 
-
+module.exports = ProductManager;
