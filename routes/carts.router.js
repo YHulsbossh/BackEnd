@@ -31,7 +31,6 @@ cartsRouter.post("/:cid/product/:pid", async (req, res) => {
   let cart = CM.getCart(cartId);
 
   if (!cart) {
-    
     const newCart = await CM.newCart();
     if (!newCart) {
       return res
@@ -41,13 +40,15 @@ cartsRouter.post("/:cid/product/:pid", async (req, res) => {
     cart = CM.getCart(cartId);
   }
 
-  const existingProduct = cart.products.find(
-    (product) => product.product === productId
-  );
-  if (existingProduct) {
-    existingProduct.quantity += 1;
-  } else {
-    cart.products.push({ product: productId, quantity: 1 });
+ 
+  if (cart && Array.isArray(cart.products)) {
+    const existingProduct = cart.products.find((product) => product.product === productId);
+
+    if (existingProduct) {
+      existingProduct.quantity += 1;
+    } else {
+      cart.products.push({ product: productId, quantity: 1 });
+    }
   }
 
   CM.saveCart();
