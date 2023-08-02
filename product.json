@@ -1,0 +1,48 @@
+[
+  {
+    "title": "ZAPATILLAS SLIPSTREAM PUMA X SPONGEBOB",
+    "code": "Amarillas",
+    "price": 69990,
+    "description": "¿Quién vive en una piña debajo del mar? ¡PUMA x SPONGEBOB! Cuando salgas a juntarte con tus amigos o vayas a cazar medusas con Bob Esponja y su pandilla, ponte estas Slipstream.",
+    "thumbnail": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/391181/01/sv01/fnd/CHL/w/1000/h/1000/fmt/png",
+    "stock": 9,
+    "id": 1
+  },
+  {
+    "title": "ZAPATILLAS RIDER FV PUMA X SPONGEBOB",
+    "code": "Patricio",
+    "price": 65990,
+    "description": "LWG: el cuero utilizado en este producto proviene de fuentes de producción responsables con el medioambiente, auditadas y certificadas según el protocolo del Leather Working Group",
+    "thumbnail": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/378544/01/sv01/fnd/CHL/w/1000/h/1000/fmt/png",
+    "stock": 19,
+    "id": 2
+  },
+  {
+    "title": "Remera gráfica PUMA x BOB ESPONJA para hombre",
+    "code": "Remerita",
+    "price": 65990,
+    "description": "¿Quién vive en una piña debajo del mar? ¡PUMA x BOB ESPONJA! Esta remera, parte de una colección repleta de diseños divertidos y alegres, está decorada con Bob Esponja y su amigo Patricio en busca de medusas.",
+    "thumbnail": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/391010/01/sv01/fnd/CHL/w/1000/h/1000/fmt/png",
+    "stock": 19,
+    "id": 3,
+    "status": true,
+    "category": "Remera"
+  },
+  {
+    "title": "CONJUNTO DEPORTIVO PUMA X SPONGEBOB PARA NIÑOS",
+    "code": "buzo",
+    "description": "¿Quién vive en una piña debajo del mar? ¡PUMA x SPONGEBOB! Este conjunto deportivo de Bob Esponja es ideal para que tu pequeño viva grandes aventuras en casa y el cole.",
+    "price": 24990,
+    "thumbnail": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/673681/66/fnd/CHL/w/1000/h/1000/fmt/png",
+    "stock": 5,
+    "id": 5
+  },
+  {
+    "title": "Gorra de pescador PUMA x BOB ESPONJA",
+    "description": "¿Quién vive en una piña debajo del mar? ¡PUMA x BOB ESPONJA! Demuestra que eres fan de la esponja más simpática con este piluso, que muestra a Bob Esponja practicando su hobby preferido: la caza de medusas.",
+    "price": 14999,
+    "code": "Gorro",
+    "stock": 100,
+    "id": 6
+  }
+]
